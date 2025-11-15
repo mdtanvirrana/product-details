@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men's Premium Gray Thobe - Modern Middle Eastern Style</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
           rel="stylesheet">
     <style>
@@ -12,30 +13,32 @@
             font-family: 'Open Sans', sans-serif;
         }
     </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="bg-white font-sans antialiased">
 
-<div class="container mx-auto px-4 py-4 md:py-8 min-h-screen flex items-center justify-center">
+<div class="container mx-auto px-4 py-4 md:py-8 min-h-screen flex items-center justify-center font-">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-[60px] w-full max-w-[1430px]">
 
         <!-- Left Side - Product Images -->
         <div class="flex flex-col md:flex-row gap-[15px] h-full">
             <!-- Thumbnail Column -->
             <div class="flex justify-between md:grid gap-[15px] overflow-x-auto md:overflow-visible md:w-32 w-full lg:w-40 md:grid-rows-4 order-2 md:order-1">
-                <button onclick="changeMainImage(0)"
-                        class="thumbnail-btn cursor-pointer ring-1 ring-gray-900 flex-shrink-0 w-[100px] h-24 md:w-full md:h-auto md:aspect-square lg:h-[153.5px] hover:ring-gray-900 transition">
-                    <img src="./public/Rectangle%2012.png" alt="Thobe view 1" class="w-full h-full object-cover object-top ">
+                <button
+                        class="thumbnail-btn cursor-pointer flex-shrink-0 w-[100px] h-24 md:w-full md:h-auto md:aspect-square lg:h-[153.5px] hover:ring-gray-900 transition">
+                    <img src="./public/Rectangle%2012.png" alt="Thobe view 1"
+                         class="w-full h-full object-cover object-top border-1 border-black ">
                 </button>
-                <button onclick="changeMainImage(1)"
-                        class="thumbnail-btn cursor-pointer ring-1 overflow-hidden flex-shrink-0 w-[100px] h-24 md:w-full md:h-auto md:aspect-square lg:h-[153.5px] hover:ring-gray-900 transition">
+                <button
+                        class="thumbnail-btn cursor-pointer overflow-hidden flex-shrink-0 w-[100px] h-24 md:w-full md:h-auto md:aspect-square lg:h-[153.5px] hover:ring-gray-900 transition">
                     <img src="./public/Rectangle%2013.png" alt="Thobe view 2" class="w-full h-full object-cover">
                 </button>
-                <button onclick="changeMainImage(2)"
-                        class="thumbnail-btn cursor-pointer ring-1 overflow-hidden flex-shrink-0 w-[100px] h-24 md:w-full md:h-auto md:aspect-square lg:h-[153.5px] hover:ring-gray-900 transition">
+                <button
+                        class="thumbnail-btn cursor-pointer overflow-hidden flex-shrink-0 w-[100px] h-24 md:w-full md:h-auto md:aspect-square lg:h-[153.5px] hover:ring-gray-900 transition">
                     <img src="./public/Rectangle%2014.png" alt="Thobe view 3" class="w-full h-full object-cover">
                 </button>
-                <button onclick="changeMainImage(3)"
-                        class="thumbnail-btn cursor-pointer ring-1 overflow-hidden flex-shrink-0 w-[100px] h-24 md:w-full md:h-auto md:aspect-square lg:h-[153.5px] hover:ring-gray-900 transition">
+                <button
+                        class="thumbnail-btn cursor-pointer overflow-hidden flex-shrink-0 w-[100px] h-24 md:w-full md:h-auto md:aspect-square lg:h-[153.5px] hover:ring-gray-900 transition">
                     <img src="./public/Rectangle%2016.png" alt="Thobe view 4" class="w-full h-full object-cover">
                 </button>
             </div>
@@ -52,21 +55,22 @@
             <div class="grid-cols-1 grid gap-3 md:gap-5">
                 <div class="container mx-auto font-sans">
                     <div class="flex items-center text-xs md:text-sm text-[#848484] flex-wrap">
-                        <a href="#" class="hover:text-gray-700">Home</a>
+                        <a href="#">Home</a>
                         <span class="mx-2">›</span>
-                        <a href="#" class="hover:text-gray-700">Men's Fashion</a>
+                        <a href="#">Men's Fashion</a>
                         <span class="mx-2">›</span>
-                        <span class="text-gray-700">Men's Premium Gray Thobe - Modern Middle Eastern Style</span>
+                        <span class="text-[#848484]">Men's Premium Gray Thobe - Modern Middle Eastern Style</span>
                     </div>
                 </div>
                 <!-- Product Title -->
-                <h1 class="text-xl md:text-2xl lg:text-[28px] font-semibold text-gray-900">
+                <h1 class="text-xl md:text-2xl lg:text-[28px] font-semibold text-gray-900 !leading-[42px] ">
                     Men's Premium Gray Thobe – Modern Middle Eastern Style
                 </h1>
 
                 <!-- Product Description -->
                 <p class="text-sm text-[#848484]">
-                    Step into timeless elegance with this premium gray thobe, crafted for men who appreciate both tradition
+                    Step into timeless elegance with this premium gray thobe, crafted for men who appreciate both
+                    tradition
                     and contemporary style.
                 </p>
                 <div class="flex items-center gap-3">
@@ -79,87 +83,71 @@
             <hr class="border-[#E2E4ED]"/>
 
             <!-- Colors Section -->
-            <div class="grid-cols-1 grid gap-4 md:gap-5">
-                <div class="grid grid-cols-1 gap-3 md:gap-[15px]">
-                    <h3 class="text-sm font-semibold text-gray-900">Colors</h3>
-                    <div class="flex gap-3 md:gap-[15px]">
-                        <button onclick="selectColor(this, 'white')"
-                                class="color-btn p-1 ring-1 ring-gray-500 cursor-pointer w-10 h-10 border-2 border-white bg-[#D3D3D3] hover:ring-gray-900 transition"></button>
-                        <button onclick="selectColor(this, 'gray')"
-                                class="color-btn w-10 h-10 border-2 cursor-pointer ring-1 ring-transparent border-white bg-gray-500 hover:ring-gray-900 transition"></button>
-                        <button onclick="selectColor(this, 'blue')"
-                                class="color-btn w-10 h-10 border-2 cursor-pointer ring-1 ring-transparent border-white bg-[#89C6FF] hover:ring-gray-900 transition"></button>
-                        <button onclick="selectColor(this, 'coral')"
-                                class="color-btn w-10 h-10 border-2 cursor-pointer ring-1 ring-transparent border-white bg-[#FF8989] hover:ring-gray-900 transition"></button>
-                        <button onclick="selectColor(this, 'mint')"
-                                class="color-btn w-10 h-10 cursor-pointer border-2 ring-1 ring-transparent border-white bg-[#89FFF9] hover:ring-gray-900 transition"></button>
+            <div class="grid-cols-1 grid gap-4 md:gap-[30px]">
+                <div class="grid-cols-1 grid gap-4 md:gap-5">
+                    <div class="grid grid-cols-1 gap-[10px]">
+                        <h3 class="text-sm font-semibold text-gray-900">Colors</h3>
+                        <div class="flex gap-3 md:gap-[15px]">
+                            <button class="color-btn p-1 ring-1 ring-gray-500 cursor-pointer w-10 h-10 border-2 border-white bg-[#D3D3D3] hover:ring-gray-900 transition"></button>
+                            <button class="color-btn w-10 h-10 border-2 cursor-pointer ring-1 ring-transparent border-white bg-gray-500 hover:ring-gray-900 transition"></button>
+                            <button class="color-btn w-10 h-10 border-2 cursor-pointer ring-1 ring-transparent border-white bg-[#89C6FF] hover:ring-gray-900 transition"></button>
+                            <button class="color-btn w-10 h-10 border-2 cursor-pointer ring-1 ring-transparent border-white bg-[#FF8989] hover:ring-gray-900 transition"></button>
+                            <button class="color-btn w-10 h-10 cursor-pointer border-2 ring-1 ring-transparent border-white bg-[#89FFF9] hover:ring-gray-900 transition"></button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Size Section -->
-                <div class="grid grid-cols-1 gap-[15px]">
-                    <h3 class="text-sm font-semibold text-gray-900 ">Size</h3>
-                    <div class="flex gap-[15px]">
-                        <button onclick="selectSize(this, 'XS')"
-                                class="size-btn w-10 h-10 border cursor-pointer !border-gray-200 text-sm hover:border-gray-400 transition">
-                            XS
-                        </button>
-                        <button onclick="selectSize(this, 'S')"
-                                class="size-btn w-10 h-10 border cursor-pointer border-gray-200 text-sm font-medium hover:border-gray-400 transition">
-                            S
-                        </button>
-                        <button onclick="selectSize(this, 'M')"
-                                class="size-btn w-10 h-10 border cursor-pointer border-gray-200  text-sm font-medium hover:border-gray-400 transition">
-                            M
-                        </button>
-                        <button onclick="selectSize(this, 'L')"
-                                class="size-btn w-10 h-10 bg-black border cursor-pointer text-white border-black  text-sm font-medium">
-                            L
-                        </button>
-                        <button onclick="selectSize(this, 'XL')"
-                                class="size-btn w-10 h-10 border cursor-pointer border-gray-200 text-sm font-medium hover:border-gray-400 transition">
-                            XL
-                        </button>
+                    <!-- Size Section -->
+                    <div class="grid grid-cols-1 gap-[10px]">
+                        <h3 class="text-sm font-semibold text-gray-900 ">Size</h3>
+                        <div class="flex gap-[15px]">
+                            <button class="size-btn w-10 h-10 border cursor-pointer !border-gray-200 text-sm hover:border-gray-400 transition">
+                                XS
+                            </button>
+                            <button class="size-btn w-10 h-10 border cursor-pointer border-gray-200 text-sm font-medium hover:border-gray-400 transition">
+                                S
+                            </button>
+                            <button  class="size-btn w-10 h-10 border cursor-pointer border-gray-200  text-sm font-medium hover:border-gray-400 transition">
+                                M
+                            </button>
+                            <button class="size-btn w-10 h-10 bg-black border cursor-pointer text-white border-black  text-sm font-medium">
+                                L
+                            </button>
+                            <button class="size-btn w-10 h-10 border cursor-pointer border-gray-200 text-sm font-medium hover:border-gray-400 transition">
+                                XL
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Quantity and Add to Cart -->
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <div class="flex items-center border border-gray-200 w-full sm:w-auto">
-                        <button onclick="decreaseQuantity()"
-                                class="px-4 py-2 font-semibold hover:bg-gray-50 transition">−
-                        </button>
-                        <span id="quantity" class="flex-1 sm:flex-none px-6 py-2 text-base font-medium text-center">5</span>
-                        <button onclick="increaseQuantity()"
-                                class="px-4 py-2 font-semibold hover:bg-gray-50 transition">+
+                    <!-- Quantity and Add to Cart -->
+                    <div class="flex flex-row gap-4 ">
+                        <div class="flex items-center justify-evenly border border-gray-200 w-[95px] ">
+                            <button
+                                    class="p-2 font-semibold transition">−
+                            </button>
+                            <span id="quantity"
+                                  class="flex-1 sm:flex-none p-2 text-base font-medium text-center">5</span>
+                            <button
+                                    class="p-2 font-semibold transition">+
+                            </button>
+                        </div>
+                        <button class="flex-1 bg-black text-white py-2 md:py-1 font-medium hover:bg-gray-800 transition">
+                            Add To Cart
                         </button>
                     </div>
-                    <button class="flex-1 bg-black text-white py-2 md:py-1 font-medium hover:bg-gray-800 transition">
-                        Add To Cart
-                    </button>
                 </div>
 
                 <!-- Action Buttons -->
-                <div class="flex flex-row gap-3 md:gap-4">
-                    <button class="flex items-center justify-center sm:justify-start gap-2 text-gray-700 hover:text-gray-900 transition py-2 sm:py-0">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
+                <div class="flex flex-row gap-3 justify-between md:justify-normal md:gap-[40px]">
+                    <button class="flex items-center justify-center sm:justify-start gap-4 text-gray-700 hover:text-gray-900 transition py-2 sm:py-0">
+                        <img src="/vector.png" alt="sdf"/>
                         <span class="text-sm md:text-base">Add To Wishlist</span>
                     </button>
-                    <button class="flex items-center justify-center sm:justify-start gap-2 text-gray-700 hover:text-gray-900 transition py-2 sm:py-0">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
+                    <button class="flex items-center justify-center sm:justify-start gap-4 text-gray-700 hover:text-gray-900 transition py-2 sm:py-0">
+                        <img src="/vector2.png" alt="sdf"/>
                         <span class="text-sm md:text-base">Ask Any Question</span>
                     </button>
-                    <button class="flex items-center justify-center sm:justify-start gap-2 text-gray-700 hover:text-gray-900 transition py-2 sm:py-0">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
-                        </svg>
+                    <button class="flex items-center justify-center sm:justify-start gap-4 text-gray-700 hover:text-gray-900 transition py-2 sm:py-0">
+                        <img src="/share.png" alt="sdf"/>
                         <span class="text-sm md:text-base">Share</span>
                     </button>
                 </div>
@@ -167,90 +155,87 @@
             <hr class="border-[#E2E4ED]"/>
             <div class="flex gap-3 items-center">
                 <div class="flex bg-[#F3F4F4] rounded-full items-center justify-center min-w-[52px] h-[52px]">
-                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor"
-                         viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
+                    <img src="/frame.png" alt="sdf"/>
                 </div>
                 <p class="text-gray-700 text-sm md:text-base">
-                    This product is selling out fast! Just 59 minutes ago, another customer purchased it. Place your order now!
+                    This product is selling out fast! Just 59 minutes ago, another customer purchased it. Place your
+                    order now!
                 </p>
             </div>
         </div>
     </div>
 </div>
 
-<script>
-    let quantity = 5;
-    const images = [
-        '/public/Rectangle%2012.png',
-        '/public/Rectangle%2013.png',
-        '/public/Rectangle%2014.png',
-        '/public/Rectangle%2016.png'
-    ];
+<!--<script>-->
+<!--    let quantity = 5;-->
+<!--    const images = [-->
+<!--        '/public/Rectangle%2012.png',-->
+<!--        '/public/Rectangle%2013.png',-->
+<!--        '/public/Rectangle%2014.png',-->
+<!--        '/public/Rectangle%2016.png'-->
+<!--    ];-->
 
-    function changeMainImage(index) {
-        document.getElementById('mainImage').src = images[index];
+<!--    function changeMainImage(index) {-->
+<!--        document.getElementById('mainImage').src = images[index];-->
 
-        // Update thumbnail borders
-        const thumbnails = document.querySelectorAll('.thumbnail-btn');
-        thumbnails.forEach((thumb, i) => {
-            if (i === index) {
-                thumb.classList.add('ring-gray-900');
-                thumb.classList.remove('ring-transparent');
-            } else {
-                thumb.classList.remove('ring-gray-900');
-                thumb.classList.add('ring-transparent');
-            }
-        });
-    }
+<!--        // Update thumbnail borders-->
+<!--        const thumbnails = document.querySelectorAll('.thumbnail-btn');-->
+<!--        thumbnails.forEach((thumb, i) => {-->
+<!--            if (i === index) {-->
+<!--                thumb.classList.add('ring-gray-900');-->
+<!--                thumb.classList.remove('ring-transparent');-->
+<!--            } else {-->
+<!--                thumb.classList.remove('ring-gray-900');-->
+<!--                thumb.classList.add('ring-transparent');-->
+<!--            }-->
+<!--        });-->
+<!--    }-->
 
-    function selectColor(btn, color) {
-        // Remove active state from all color buttons
-        document.querySelectorAll('.color-btn').forEach(b => {
-            b.classList.remove('ring-gray-400');
-            b.classList.add('ring-transparent');
-            if (b.classList.contains('bg-gray-100')) {
-                b.classList.remove('ring-transparent');
-                b.classList.add('ring-gray-300');
-            }
-        });
+<!--    function selectColor(btn, color) {-->
+<!--        // Remove active state from all color buttons-->
+<!--        document.querySelectorAll('.color-btn').forEach(b => {-->
+<!--            b.classList.remove('ring-gray-400');-->
+<!--            b.classList.add('ring-transparent');-->
+<!--            if (b.classList.contains('bg-gray-100')) {-->
+<!--                b.classList.remove('ring-transparent');-->
+<!--                b.classList.add('ring-gray-300');-->
+<!--            }-->
+<!--        });-->
 
-        // Add active state to clicked button
-        btn.classList.remove('ring-transparent', 'ring-gray-500');
-        btn.classList.add('ring-gray-500');
-    }
+<!--        // Add active state to clicked button-->
+<!--        btn.classList.remove('ring-transparent', 'ring-gray-500');-->
+<!--        btn.classList.add('ring-gray-500');-->
+<!--    }-->
 
-    function selectSize(btn, size) {
-        // Remove active state from all size buttons
-        document.querySelectorAll('.size-btn').forEach(b => {
-            b.classList.remove('bg-black', 'text-white', 'border-black');
-            b.classList.add('border-gray-300', 'text-gray-900');
-        });
+<!--    function selectSize(btn, size) {-->
+<!--        // Remove active state from all size buttons-->
+<!--        document.querySelectorAll('.size-btn').forEach(b => {-->
+<!--            b.classList.remove('bg-black', 'text-white', 'border-black');-->
+<!--            b.classList.add('border-gray-300', 'text-gray-900');-->
+<!--        });-->
 
-        // Add active state to clicked button
-        btn.classList.remove('border-gray-300', 'text-gray-900');
-        btn.classList.add('bg-black', 'text-white', 'border-black');
-    }
+<!--        // Add active state to clicked button-->
+<!--        btn.classList.remove('border-gray-300', 'text-gray-900');-->
+<!--        btn.classList.add('bg-black', 'text-white', 'border-black');-->
+<!--    }-->
 
-    function increaseQuantity() {
-        quantity++;
-        document.getElementById('quantity').textContent = quantity;
-    }
+<!--    function increaseQuantity() {-->
+<!--        quantity++;-->
+<!--        document.getElementById('quantity').textContent = quantity;-->
+<!--    }-->
 
-    function decreaseQuantity() {
-        if (quantity > 1) {
-            quantity--;
-            document.getElementById('quantity').textContent = quantity;
-        }
-    }
+<!--    function decreaseQuantity() {-->
+<!--        if (quantity > 1) {-->
+<!--            quantity&#45;&#45;;-->
+<!--            document.getElementById('quantity').textContent = quantity;-->
+<!--        }-->
+<!--    }-->
 
-    // Initialize first thumbnail as active
-    window.addEventListener('DOMContentLoaded', () => {
-        changeMainImage(0);
-    });
-</script>
+<!--    // Initialize first thumbnail as active-->
+<!--    window.addEventListener('DOMContentLoaded', () => {-->
+<!--        changeMainImage(0);-->
+<!--    });-->
+<!--</script>-->
 </body>
 </html>
 
